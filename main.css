@@ -34,15 +34,44 @@ body{
 	border-top: 275px solid transparent;
 	border-bottom: 275px solid transparent;
 }
+
+
+
+
 .se-slope-black:nth-child(odd):after{
 	border-right: 50px solid #e90089;
 	right: 0px;
 }
-.se-slope-black:nth-child(even):after{
+
+
+.se-slope-black:nth-child(even):before{
 	border-left: 60px solid #e90089;
 	left: 0px;
-  
+  }
+
+
+
+.se-slope-pink:nth-child(odd):after,
+.se-slope-pink:nth-child(even):after{
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	width: 0px;
+	height: 0px;
+	border-top: 275px solid transparent;
+	border-bottom: 275px solid transparent;
 }
+.se-slope-pink:nth-child(odd):after{
+	border-right: 50px solid black;
+	right: 0px;
+}
+
+
+
+
+
+
+
 .se-container h3{
 	z-index: 10;
 	font-size: 30px;
@@ -94,6 +123,10 @@ body{
 	right: -30px;
 }
 
+
+
+
+
 .se-content p{
   text-align: center;
   margin-top: -20px;
@@ -111,4 +144,6 @@ p{
 #parat{
   color: #e90089;
 }
+
+
 
